@@ -1,0 +1,20 @@
+objetos possuem caractaristicas que são atributos e comportamentos que são metodos 
+
+classe - grupo dos objetos semelhantes 
+
+
+operações entre classes e obj
+instanciação -- a partir da classe eu crio o objeto
+
+
+classificação -- se eu tenho um objeto, quero saber qual classe ele prtence, entao estou classificando, seria o inverso 
+
+orientação a objeto 
+
+- herança - pai, filho 
+-encapsulamento - esconder informações, guardar
+-polimorfismo - se comportar de acordo com o objeto que esta criando 
+
+
+
+
