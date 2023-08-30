@@ -1,0 +1,12 @@
+C:\Users\aluno\Desktop\PClasses\PClasses\bin\Debug\PClasses.exe.config
+C:\Users\aluno\Desktop\PClasses\PClasses\bin\Debug\PClasses.exe
+C:\Users\aluno\Desktop\PClasses\PClasses\bin\Debug\PClasses.pdb
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.csprojAssemblyReference.cache
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.Form1.resources
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.frmHorista.resources
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.Properties.Resources.resources
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.csproj.GenerateResource.cache
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.exe
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.pdb
+C:\Users\aluno\Desktop\PClasses\PClasses\obj\Debug\PClasses.frmMensalista.resources
