@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+</head>
+<body>
+    <h1>Pesquisa de Filme</h1>
+    <form id="pesquisaForm">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required><br>
+        
+        <label for="sexo">Sexo:</label>
+        <input type="radio" id="sexoM" name="sexo" value="masculino" required>
+        <label for="sexoM">Masculino</label>
+        <input type="radio" id="sexoF" name="sexo" value="feminino" required>
+        <label for="sexoF">Feminino</label><br>
+        
+        <label for="opiniao">Opinião:</label>
+        <select id="opiniao" required>
+            <option value="1">Péssimo</option>
+            <option value="2">Regular</option>
+            <option value="3">Bom</option>
+            <option value="4">Ótimo</option>
+        </select><br>
+        
+        <button type="button" onclick="processarResposta()">Enviar Resposta</button>
+    </form>
+
+    <h2>Estatísticas</h2>
+    <p>Média de Idade: <span id="mediaIdade"></span></p>
+    <p>Idade da pessoa mais velha: <span id="idadeMaisVelha"></span></p>
+    <p>Idade da pessoa mais nova: <span id="idadeMaisNova"></span></p>
+    <p>Nº de pessoas que responderam Péssimo: <span id="quantidadePessimo"></span></p>
+    <p>Nº de pessoas que responderam Regular: <span id="quantidadeRegular"></span></p>
+    <p>Porcentagem de pessoas que responderam Bom: <span id="porcentagemBom"></span>%</p>
+    <p>Porcentagem de pessoas que responderam Ótimo: <span id="porcentagemOtimo"></span>%</p>
+    <p>Nº de mulheres que responderam: <span id="mulheres"></span></p>
+    <p>Nº de homens que responderam: <span id="homens"></span></p>
+
+    <script src="index.js"></script>
+</body>
+</html>
