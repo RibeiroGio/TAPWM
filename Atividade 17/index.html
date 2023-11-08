@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <title>Formulário de Exemplo</title>
+    <script>
+        function validarFormulario() {
+            var nome = document.meuForm.elements["nome"].value;
+            var email = document.meuForm.elements["email"].value;
+            var comentario = document.meuForm.elements["comentario"].value;
+            var pesquisa = document.meuForm.elements["pesquisa"].value;
+
+            if (nome.length < 10) {
+                alert("Nome deve ter pelo menos 10 caracteres.");
+                return false;
+            }
+
+            if (email.indexOf('@') === -1 || email.indexOf('.') === -1) {
+                alert("Email deve conter os caracteres '@' e '.'.");
+                return false;
+            }
+
+            if (comentario.length < 20) {
+                alert("Comentário deve ter pelo menos 20 caracteres.");
+                return false;
+            }
+
+            if (pesquisa === "nao") {
+                alert("Volte sempre a esta página!");
+            } else {
+                alert("Que bom que você voltou a visitar esta página!");
+            }
+
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+    <form name="meuForm" onsubmit="return validarFormulario()">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <label for="comentario">Comentário:</label>
+        <textarea name="comentario" id="comentario" required></textarea><br><br>
+
+        <label>Pesquisa:<br> Você já visitou esta página antes?</label><br><br>
+        <input type="radio" name="pesquisa" value="sim" required> Sim
+        <input type="radio" name="pesquisa" value="nao" required> Não
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+</body>
+
+</html>

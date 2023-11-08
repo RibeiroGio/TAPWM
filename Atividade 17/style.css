@@ -1,0 +1,22 @@
+body {
+    background: #8bbeba;
+    border: 4px solid rgb(18, 82, 114);
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    height: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    width: 70%; 
+    align-items: center; 
+    justify-content: center; 
+  
+}
+
+div{
+    background: #eeeeee;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
