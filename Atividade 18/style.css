@@ -1,0 +1,14 @@
+body{
+    background: #8cb9b6;
+    border: 4px solid rgb(18, 82, 114);
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-size: 30px;
+    font-weight: bold;
+    height: 200%;
+    margin-top: 0 auto;
+    padding:15px;
+    width: 50%; 
+    text-align: center;
+
+}

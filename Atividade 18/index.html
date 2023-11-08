@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Raleway:wght@300&display=swap"
+    rel="stylesheet">
+  <title>Cursos Fatec Sorocaba:</title>
+
+</head>
+
+<body>
+  <label for="cursos">Visualizar cursos: </label>
+  <select id="cursos" onchange="abrirCurso()">
+    <option value="vazio"></option>
+    <option value="analise-e-desenvolvimento-de-sistemas">Análise e Desenvolvimento de Sistemas</option>
+    <option value="logistica">Logística</option>
+    <option value="eletronica-automotiva">Eletronica Automotiva</option>
+    <option value="gestao-empresarial">Gestão Empresarial</option>
+    <option value="fabricacao-mecanica">Fabricação Mecânica</option>
+    <option value="gestao-da-qualidade">Gestão da Qualidade</option>
+    <option value="manufatura-avancada">Manufatura Avançada</option>
+    <option value="polimeros">Polímeros</option>
+    <option value="processos-metalurgicos">Processos Metalúrgicos</option>
+    <option value="projetos-mecanicos">Projetos Mecânicos</option>
+    <option value="sistemas-biomedicos">Sistemas Biomédicos</option>
+
+  </select>
+
+  <script>
+    function abrirCurso() {
+      var select = document.getElementById("cursos");
+      var cursoSelecionado = select.options[select.selectedIndex].value;
+
+      var confirmacao = confirm("Você deseja abrir o curso de " + select.options[select.selectedIndex].text + "?");
+
+      if (confirmacao) {
+        var largura = 600;
+        var altura = 300;
+        var urlCurso = obterURLDoCurso(cursoSelecionado);
+        window.open(urlCurso, "_blank", "width=" + largura + ", height=" + altura);
+      }
+    }
+
+    function obterURLDoCurso(curso) {
+      var cursosURLs = {
+        "analise-e-desenvolvimento-de-sistemas": "ads.html",
+        "gestao-empresarial": "ge.html",
+        "logistica": "log.html",
+        "eletronica-automotiva": "ea.html",
+        "fabricacao-mecanica": "fm.html",
+        "gestao-da-qualidade": "gq.html",
+        "manufatura-avancada": "ma.html",
+        "polimeros": "pol.html",
+        "processos-metalurgicos": "pmet.html",
+        "projetos-mecanicos": "pmec.html",
+        "sistemas-biomedicos": "sb.html"
+
+      };
+
+      return cursosURLs[curso] || "#";
+    }
+  </script>
+</body>
+
+</html>
