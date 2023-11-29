@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coreeção da prova TAPWM</title>
+</head>
+
+<body>
+    <script>
+        //var ou const  questao 1
+        var ObjLivro = {
+            Titulo: "Dom Casmurro",
+            Autor: "Machado de Assis"
+        }
+
+        alert(ObjLivro.Titulo + " " + ObjLivro.Autor)
+        alert(`${ObjLivro.Titulo} ${ObjLivro1.Autor}`)
+        alert(JSON.stringify(ObjLivro))
+
+        var ObjLivro2 = {};
+        ObjLivro2.Titulo = "Dom Casmurro";
+        ObjLivro2.Autor = "Machado de Assis";
+
+        var ObjLivro3 = new Object();
+        ObjLivro3.Titulo = "Dom Casmurro";
+        ObjLivro3.Autor = "Machado de Assis";
+
+        // definindo a dunçõa construtora livro (this define a propiedade da função)
+
+        function Livro(_Titulo, _Autor) {
+            this.Titulo = _Titulo;
+            this.Autor = _Autor;
+        }
+
+        var ObjLivro4 = new Livro('Dom Casmurro', "Machado de Assis");
+
+
+        // definindo a classe Livro1 
+
+        class Livro1 {
+            constructor(titulo, autor) {
+                this.titulo = titulo;
+                this.autor = autor;
+            }
+
+        }
+        const objLivro5 = new Livro1("Titulo do Livro", "Autor do Livro");
+
+
+        //questao 2
+
+        var i = 1 + "2" + 3;
+        for (j = 0; j < 10; j++) {
+            alert(`$(1)$(j)`);
+            if (j === 5)
+                break;
+        }
+
+        //questao 3 LETRA D
+
+        // questao 4 RESP: 1
+
+
+        //questao 5 
+
+        function Ordena(n2, n2, n3) {
+            var matriz = [n1, n2, n3];
+            matriz.sort(function (a, b) { b - a });
+            return matriz;
+        }
+        alert(Ordena(5, 2, 2));
+
+        function Ordena2(n1, n2, n3) {
+            var matriz = [n1, n2, n3];
+            matriz.sort(function (a, b) { a - b });
+            matriz.reverse();
+            return matriz;
+        }
+
+        function Ordena3(n1, n2, n3) {
+            let maior = Math.max(n1, n2, n3);
+            let menor = Math.min(n1, n2, n3);
+            let meio;
+            if (n1 !== maior && n1 == menor) {
+                meio = n1;
+            } else if (n2 !== maior && n2 !== menor) {
+                meio = n2;
+            } else {
+                meio = n3;
+            }
+            return
+
+
+
+
+            // questao 6
+            var texto = '{"descricao": "Produto A", "codigo": 123}'
+            var objeto = JSON.parse(texto);
+            alert(objeto.descricao + " " + objeto.codigo);
+
+            alert(`${objeto.codigo} ${objeto.descricao}`);
+
+            // outro jeito  
+                var texto = `{"descricao": "Produto A", "codigo", 123}`;
+                var objeto = JSON.parse(texto);
+                alert(objeto.descricao);
+                alert(objeto.codigo); 
+
+            // questao 7 
+            /* undefined
+                NaN
+                Infinity
+                null */
+
+            // questao 8 LETRA: E
+
+            // questao 9
+            var entrada = 1 + 2 + "3" + 4;
+            var saida = "";
+            for (var i = 0; i < 5; i++) {
+                saida += entrada + i + " ";
+            }
+            alert(saida);
+
+        //questao 10 LETRA: C
+
+        //questao 11
+        /*1, <title>, <form>, 1, 4 */
+
+        // questao 12
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
